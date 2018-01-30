@@ -18,9 +18,9 @@ abstract class BaseEntityCollection implements \IteratorAggregate, \ArrayAccess
 
     protected $baseType;
 
-    public function __construct(BaseEntity $baseEntity)
+    public function __construct()
     {
-        $this->baseType = $baseEntity;
+        $this->baseType = BaseEntity::class;
     }
 
     /**

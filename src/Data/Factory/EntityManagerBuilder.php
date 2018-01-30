@@ -19,14 +19,14 @@ class EntityManagerBuilder
 
     public static function create(): EntityManager {
         $config = Setup::createXMLMetadataConfiguration(["../Mappings/"], true);
-        $conn = array(
+        $conn = [
             'dbname' => 'erp_admin',
             'user' => 'root',
             'password' => 'root',
             'host' => 'localhost',
             'port' => '3306',
             'driver' => 'pdo_mysql',
-        );
+        ];
 
         return EntityManager::create($conn, $config);
     }

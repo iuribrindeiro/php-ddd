@@ -11,21 +11,12 @@ use Zend\ServiceManager\Factory\InvokableFactory;
 return [
     'router' => [
         'routes' => [
-            'home' => [
-                'type' => 'Literal',
-                'options' => [
-                    'route'    => '/',
-                    'defaults' => [
-                        'controller' => Controllers\ApigilityAdmin\IndexController::class,
-                        'action'     => 'index',
-                    ],
-                ],
-            ],
+
         ],
     ],
     'controllers' => [
         'factories' => [
-            Controllers\ApigilityAdmin\IndexController::class => InvokableFactory::class,
+
         ],
     ],
     'view_manager' => [
